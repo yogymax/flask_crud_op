@@ -74,9 +74,7 @@ def search_products():
                 return render_template('search_product.html',product=prod)
     return render_template('search_product.html',product = None)
 
-@app.route('/sample')
-def dummy_method():
-    return "hi.."
+
 
 if __name__ == '__main__':
     app.run(debug=True) #debug=True this value shud be only on dev env
